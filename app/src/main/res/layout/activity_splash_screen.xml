@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ilove" />
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b9d0d3d4"
+        android:gravity="center"
+        android:orientation="vertical"
+         android:visibility="gone">
+
+        <com.example.vinay.techmasala.ProgressWheel
+            android:id="@+id/progressWheel"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            ProgressWheel:barColor="@color/colorPrimary"
+            ProgressWheel:barLength="60dp"
+            ProgressWheel:barWidth="5dp"
+            ProgressWheel:rimColor="@color/colorPrimary"
+            ProgressWheel:rimWidth="2dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading data ..."
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
